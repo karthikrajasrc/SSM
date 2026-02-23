@@ -83,6 +83,10 @@
     height: 40px;
 }
 
+.footer-copyright {
+    margin-top: 50px;
+}
+
 @media screen and (max-width: 500px) {
     .navbar-links {
         display: none;

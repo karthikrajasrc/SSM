@@ -5,6 +5,8 @@ import Products from "./Pages/Products";
 import Cart from "./Pages/Cart";
 import Orders from "./Pages/Orders";
 import "./Pages/Pages.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
 
@@ -21,7 +23,11 @@ const App = () => {
     }
   ]);
 
-  return <RouterProvider router={router} />;
+  return (<>
+    <RouterProvider router={router} />
+    <ToastContainer position="top-right"
+      autoClose={2000}/>
+  </>);
 };
 
 export default App;

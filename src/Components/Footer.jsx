@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <div className="main-footer">
             <footer>
-                <p>Copyright © 2026 SSM Fragrence. All rights reserved.</p>
+                
                 <img src={logo} alt="" />
                 <div>
                     <h2>Contact</h2>
@@ -19,7 +19,9 @@ const Footer = () => {
                         <FontAwesomeIcon icon={faEnvelope} />
                     </div>
                 </div>
+                <p className="footer-copyright">Copyright © 2026 SSM Fragrence. All rights reserved.</p>
             </footer>
+            
         </div>
     );
 };
