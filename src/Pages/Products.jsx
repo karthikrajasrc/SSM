@@ -103,7 +103,7 @@ const Products = () => {
                 <button className="products-add-btn-main" onClick={handleAddProduct}>Add Product + </button>
                 <form onSubmit={handleAdd}>
                 <div className="products-add-form">
-                        <select onChange={(e) => setCategoryType(e.target.value)}>
+                        <select onChange={(e) => setCategoryType(e.target.value)} className="products-select">
                             <option value="">Select Category Type</option>
                             <option value="new">New Category</option>
                             <option value="existing">Existing Category</option>
@@ -127,7 +127,7 @@ const Products = () => {
                             </select>
                         )}
                         <input type="file" ref={fileInputRef}
-                            onChange={(e) => setFile(e.target.files[0])} />
+                            onChange={(e) => setFile(e.target.files[0])} className="products-file"/>
                     <input type="text" placeholder="Product Name..." value={name} onChange={e => setName(e.target.value)} />
                     <input type="number" placeholder="Product Price..." value={price} onChange={e => setPrice(e.target.value)} />
                     <button className="products-add-btn" >Add Product</button>

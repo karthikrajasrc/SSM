@@ -74,6 +74,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    color: black;
 }
 
 .home-products-shop-btn button {
@@ -84,6 +85,7 @@
     border-radius: 4px;
     background-color: #be680d9c;
     animation: hover 0.5s infinite ease-in-out;
+    color: black;
 }
 
 @keyframes hover {
@@ -147,12 +149,13 @@
 }
 
 .products-add-btn-main {
-    padding: 4px 6px;
+    padding: 4px 8px;
     font-size: 18px;
     border: none;
     font-weight: bold;
     border-radius: 4px;
     background-color: #f3c89a74;
+    color: black;
 }
 
 .products-add-form {
@@ -163,7 +166,7 @@
     gap: 10px;
     text-align: center;
     border: 1px solid rgba(128, 128, 128, 0.382);
-    padding: 25px;
+    padding: 20px;
     border-radius: 10px;
     background-color: white;
 }
@@ -175,6 +178,18 @@
     font-weight: bold;
     border-radius: 4px;
     background-color: #be680d74;
+    color: black;
+}
+
+.products-file {
+    padding: 4px 6px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    width: 70%;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: 0.5px solid rgba(128, 128, 128, 0.382);
 }
 
 .products-add-form input {
@@ -194,6 +209,7 @@
     font-weight: bold;
     border-radius: 4px;
     background-color: #f3c89a74;
+    color: black;
 }
 
 .products-cancel-btn {
@@ -241,6 +257,7 @@
     font-weight: bold;
     border-radius: 4px;
     background-color: #be680d74;
+    color: black;
 }
 
 .product-card img {
@@ -248,6 +265,8 @@
     height: 250px;
     border-radius: 10px;
 }
+
+
 
 @media screen and (max-width: 500px) {
     .home-banner-web {
@@ -285,7 +304,7 @@
     }
 
     .home-products-list-item:hover {
-        transform: scale(1.08);
+        transform: scale(1.0);
         transition: all 0.2s ease-in-out;
     }
 
@@ -349,7 +368,10 @@
 
     .products-add-form {
         gap: 10px;
-        padding: 15px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .products-add-form input,
